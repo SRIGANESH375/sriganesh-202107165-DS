@@ -1,6 +1,6 @@
 # convert decimal into binary using recursion
 def find(decimal_number):
-  if decimal number++0:
+  if decimal number==0:
      return 0
   else:
      return(decimal_number % 2 +10 * find(int(decimal_number//2)))
