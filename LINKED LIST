@@ -9,3 +9,16 @@ public boolean hasCycle(ListNode head) {
 }
  return false;
 }
+while(
+ head!=null && slow.next !=null
+ && fast.next!=null && fast.next.next != null) {
+ slow = slow.next;
+ fast = fast.next.next;
+ if(slow == fast) return true;
+ head = head.next;
+}
+while(runner.next!=null && runner.next.next!=null) {
+ walker = walker.next;
+ runner = runner.next.next;
+ if(walker==runner) return true;
+}
